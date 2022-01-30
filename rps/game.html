@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <!-- latest NES.css -->
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <a href="index.html">
+        <h1>
+          <span class="rock">Rock</span>
+          <span class="paper">Paper</span>
+          <span class="scissors">Scissors</span>
+        </h1>
+      </a>
+      <div class="title">
+        <span class="span1"
+          ><img
+            src="https://c.tenor.com/TofJrkqD9JMAAAAM/impressed-awsome.gif"
+            alt="the rock"
+        /></span>
+        <span class="span2">🧻</span>
+        <span class="span3"
+          ><span class="iconify" data-icon="twemoji:scissors"></span
+        ></span>
+      </div>
+
+      <div class="scoreboard">
+        <span class="scoreCounter"
+          >User Score: <span id="userScore">0</span></span
+        >
+        <span class="scoreCounter"
+          >CPU Score: <span id="cpuScore">0</span></span
+        >
+      </div>
+    </div>
+
+    <div class="game">
+      <h2 id="title">Let's play!</h2>
+      <form action="" method="get" id="playForm">
+        <div class="selectPlay">
+          <a href="#" class="nes-badge">
+            <span class="is-dark">
+              <label>
+                <input
+                  value="rock"
+                  type="radio"
+                  class="nes-radio is-dark"
+                  name="play"
+                />
+                <span
+                  >Rock
+                  <img
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/rock_1faa8.png"
+                    srcset="
+                      https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/285/rock_1faa8.png 2x
+                    "
+                    alt="Rock on Apple iOS 14.6"
+                    width="24"
+                    height="24"
+                /></span>
+              </label>
+            </span>
+          </a>
+
+          <a href="#" class="nes-badge">
+            <span class="is-dark">
+              <label>
+                <input
+                  value="paper"
+                  type="radio"
+                  class="nes-radio is-dark"
+                  name="play"
+                />
+                <span>Paper 📝</span>
+              </label>
+            </span>
+          </a>
+
+          <a href="#" class="nes-badge">
+            <span class="is-dark">
+              <label>
+                <input
+                  value="scissors"
+                  type="radio"
+                  class="nes-radio is-dark"
+                  name="play"
+                />
+                <span
+                  >Scissors
+                  <span class="iconify" data-icon="twemoji:scissors"></span
+                ></span>
+              </label>
+            </span>
+          </a>
+        </div>
+        <button class="neon-button">Play!</button>
+        <span class="cpu" id="CPU">CPU is waiting...</span>
+      </form>
+    </div>
+
+    <script src="./assets/game.js"></script>
+  </body>
+</html>
