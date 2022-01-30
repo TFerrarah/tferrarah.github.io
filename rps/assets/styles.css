@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+  }
+  
+  input:focus,
+  input:focus-visible {
+    border: none;
+    outline: none;
+  }
+  
+  body {
+    background-color: #16161e!important;
+  }
+  
+  html {
+    cursor: auto;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-top: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  .title span {
+    margin-top: 5rem;
+    position: relative;
+    animation: simpleHop 3s infinite;
+  }
+  
+  .title .span1 {
+    animation-delay: 0s;
+  }
+  
+  .span1 img {
+    border-radius: 50%;
+    height: 8rem;
+  }
+  
+  .title .span2 {
+    animation-delay: 0.5s;
+  }
+  
+  .title .span3 {
+    animation-delay: 1s;
+  }
+  
+  @keyframes simpleHop {
+    0% {
+      bottom: 0px;
+    }
+    50% {
+      bottom: 3rem;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  
+  .rock {
+    color: grey;
+  }
+  
+  .paper {
+    color: #f2eecb;
+  }
+  
+  .scissors {
+    color: lightcoral;
+  }
+  
+  #randomPhrase {
+    color: #16c60c;
+    text-align: center;
+  
+    opacity: 1;
+    transition: 0s linear;
+  }
+  
+  #randomPhrase.hide {
+    opacity: 0;
+    transition: 0s linear;
+  }
+  
+  .phraseContainer {
+    width: 60%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .console {
+    width: 660px;
+    height: 100px;
+    background: #282828;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 50px 1px rgba(112, 53, 187, 0.6);
+  }
+  
+  .consoleHeader {
+    background: #191919;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    gap: 2%;
+    padding: 10px;
+  }
+  
+  .consoleBody {
+    padding: 0px 11px 0px 11px;
+    height: 75%;
+  }
+  
+  .consoleBody form {
+    height: 85%;
+  }
+  
+  .consoleBody input {
+    height: 100%;
+    background: transparent;
+    border: none;
+  
+    color: white;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  
+  .consoleBody form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  
+    color: white;
+  }
+  
+  .underscoreCursor {
+    color: white;
+  }
+  
+  .hint {
+    margin-top: 2rem;
+    color: #49496a;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    animation: typing 1s forwards;
+  }
+  
+  .hint {
+    opacity: 1;
+    transition: 0.5s linear;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  
+  /* Game Styling */
+  
+  .scoreboard {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  .game {
+    width: 60%;
+    margin: auto;
+  }
+  
+  .game form {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .game h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  /* neon button */
+  
+  :root {
+    --clr-neon: #ae63d1;
+    --clr-bg: #411e49;
+  }
+  
+  button {
+    background: none;
+    outline: none;
+  }
+  
+  .neon-button {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.45em currentColor; */
+    box-shadow: 0 0 0.5em 0 var(--clr-neon), inset 0 0 0.5em 0 var(--clr-neon);
+    transition: background-color 100ms linear;
+  }
+  
+  .neon-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2em;
+    box-shadow: 0 0 2em 0em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon-button:hover,
+  .neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+  }
+  
+  .neon-button:focus::before,
+  .neon-button:hover::before {
+    opacity: 1;
+  }
+  
+  .neon-button:focus::after,
+  .neon-button:hover::after {
+    opacity: 1;
+  }
+  
+  /* select play */
+  
+  .selectPlay {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+  
+  /* cpu */
+  
+  .cpu {
+    color: #16c60c;
+    font-size: 1rem;
+  }
+  
+  /* shake animation */
+  
+  .shake {
+    animation: shake 0.5s 1;
+  }
+  
+  @keyframes shake {
+    0% {
+      right: 0px;
+    }
+    25% {
+      right: 2rem;
+    }
+    50% {
+      right: -2rem;
+    }
+    75% {
+      right: 1rem;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  
+  /* score colors */
+  
+  .yellow {
+    color: darkgoldenrod;
+  }
+  
+  .orange {
+    color: darkorange;
+  }
+  
+  .red {
+    color: lightcoral;
+  }
+  
+  /* shake animation */
+  
+  .opShake {
+    position: absolute;
+    color: #ff6060;
+    animation: opShake 0.5s infinite;
+  }
+  
+  @keyframes opShake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  

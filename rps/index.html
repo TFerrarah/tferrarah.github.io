@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <!-- latest NES.css -->
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>
+        <span class="rock">Rock</span>
+        <span class="paper">Paper</span>
+        <span class="scissors">Scissors</span>
+      </h1>
+      <div class="title">
+        <span class="span1"
+          ><img
+            src="https://c.tenor.com/TofJrkqD9JMAAAAM/impressed-awsome.gif"
+            alt="the rock"
+        /></span>
+        <span class="span2">🧻</span>
+        <span class="span3"
+          ><span class="iconify" data-icon="twemoji:scissors"></span
+        ></span>
+      </div>
+
+      <div class="nes-container is-rounded is-dark phraseContainer">
+        <h2 id="randomPhrase"></h2>
+      </div>
+
+      <div class="console">
+        <div class="consoleHeader">
+          <span
+            class="iconify"
+            data-icon="akar-icons:circle-fill"
+            style="color: #fe5f56;"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="akar-icons:circle-fill"
+            style="color: #fab82b;"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="akar-icons:circle-fill"
+            style="color: #24bf3a;"
+          ></span>
+        </div>
+
+        <div class="consoleBody">
+          <form action="game.html" id="consoleForm">
+            <span class="consolePrefix">server@admin ~ $</span>
+            <input
+              type="text"
+              id="cmd"
+              placeholder="Type a command or use 'play' to play the game"
+            />
+          </form>
+        </div>
+      </div>
+
+      <ul class="hint hidden" id="hint">
+        <li>
+          'play' or 'gioca': Play the game
+          <ul style="padding-left: 1rem;">
+            <li>arguments: --win, --impossible</li>
+          </ul>
+        </li>
+        <li>'su': go ahead and find out 👀</li>
+        <li>'help' : display this message</li>
+        <li>'sudo rm -rf /' : if you know, you know.</li>
+      </ul>
+    </div>
+    <!-- custom script -->
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
