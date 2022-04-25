@@ -1,0 +1,232 @@
+/* header */
+
+header a{
+    font-size: 2rem;
+    font-family: 'Courgette', cursive;
+    font-weight: normal;
+    color: white; 
+}
+
+a:hover{
+    color: white !important;
+}
+
+.title{
+    color: white;
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+
+.title h2{
+    opacity: 60%;
+}
+
+/* main */
+main{
+    min-height: max-content;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* text colors */
+
+.sfera{
+    color: #38DBBF;
+}
+
+
+
+.cilindro{
+    color: #6394D3;
+}
+
+.clessidra{
+    color: #DF6161;
+}
+
+.anticlessidra{
+    color: #7460F0;
+}
+
+.cavalieri{
+    color: #FFB107;
+}
+
+.solidi{
+    background: linear-gradient(90deg, #38DBBF 0%, #6FA7F0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.raggio{
+    color: #69CC69;
+}
+
+/* color variables */
+
+:root{
+    --sfera: #38DBBF;
+    --cilindro: #6394D3;
+}
+
+/* Typography */
+
+main h1{
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+main h2{
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+main h3{
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+main p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+strong{
+    font-weight: 800;
+}
+
+.latexTitle{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+/* protagonisti */
+
+#protagonisti>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+figcaption {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* definizione */
+
+.definizione{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem;
+    gap: 2rem;
+    background: white;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.definizione h3{
+    font-size: 2rem;
+    color: #FFB107;
+}
+
+.definizione h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.definizione p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.definizione q{
+    font-style: italic;
+}
+
+/* figures */
+.figure{
+    width: 100%;
+    height: auto;
+    border: 2rem solid;
+    border-radius: 3rem;
+    border-image-source: linear-gradient(90deg, #38DBBF 0%, #6FA7F0 100%);
+    border-image-width: 50%;
+    margin-bottom: 2rem;
+}
+
+/* formula with image */
+
+.formula-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 25%;
+    margin-bottom: 2rem;
+}
+
+.formula-img img{
+    border-radius: 2rem;
+    border: .5rem solid;
+}
+
+[data-solid="sfera"]{
+    border-color: var(--sfera) !important;
+}
+
+[data-solid="cilindro"]{
+    border-color: var(--cilindro) !important;
+}
+
+.latexFormula{
+    display: flex;
+    flex-direction: column;
+}
+
+/* scroll back button */
+
+a.scrollBack{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    padding: 1rem 3rem;
+
+    font-size: 2rem;
+    text-decoration: none;
+    color: #4D4D4D;
+
+    border: .5rem solid #4D4D4D;
+    border-radius: 2rem;
+
+    width: 20%;
+}
+
+main a:hover{
+    color: #696969 !important;
+}
+
+/* footer */
+
+footer{
+    margin-top: 0;
+}

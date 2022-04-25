@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!-- Page title -->
+    <title>MathMate - Volume di una sfera</title>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- icons -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">MathMate</a>
+    </header>
+
+    <div class="title">
+        <h2>Iniziamo!</h2>
+        <h3>Cerca la formula qui sotto, la troverai sicuramente!</h3>
+    </div>
+
+    <div class="separator">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 90">
+            <path fill="#ECFBFF" d="M0 92S292.548 0 480 0s292.158 58.175 480 92h197.67C1327.33 68.46 1498.18 0 1635 0c190.68 0 285 92 285 92H0Z"/>
+            <path fill="#ECFBFF" fill-opacity=".6" d="M89 0c187.453 0 292.16 58.175 480.002 92L768 91.816C937.221 68.102 1107.54 0 1244 0c190.68 0 285 92 285 92H0V12.516C17.518 4.933 45.594 0 89 0Z"/>
+            <path fill="#ECFBFF" fill-opacity=".6" d="M285.001 92s292.548-92 480-92S1057.16 58.175 1245 92h197.67C1612.33 68.46 1783.18 0 1920 0v92H285.001Z"/>
+          </svg> 
+    </div>
+    <main>
+        <section id="title">
+            <h1>Dimostrazione del volume di una sfera</h1>
+        </section>
+
+        <section id="protagonisti">
+            <h2>I nostri protagonisti</h2>
+            <div>
+                <figure>
+                    <img src="./assets/solids/sphere.svg" alt="Sfera con raggio r">
+                     <figcaption>
+                        <span class="sfera">Sfera</span> con raggio <span class="latex">r</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/solids/cylinder.svg" alt="Cilindro con raggio r">
+                     <figcaption>
+                        <span class="cilindro">Cilindro</span> con raggio <span class="latex">r</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="Dimostrazione">
+            <h2>Dimostrazione</h2>
+            <p>
+                Consideriamo una sfera di raggio r e un cilindro circoscritto alla circonferenza. <br>
+                Per comodità separiamo i due solidi.
+            </p>
+            <p>
+                All’interno del <strong class="cilindro">Cilindro</strong> consideriamo due coni le cui basi corrispondono con le basi del cilindro, e i <br> due vertici si uniscono al centro del solido.
+            </p>
+
+            <div class="definizione">
+                <h3>⚡ Definizione</h3>
+                <div>
+                    <p>
+                        Il risultato dei due coni posto con vertici opposti è chiamato <strong class="clessidra">Clessidra</strong>.
+                    </p>
+                    <p>
+                        Mentre tutta la parte che non è <strong class="clessidra">clessidra</strong> viene chiamata <strong class="anticlessidra">Anticlessidra</strong>
+                    </p>
+                </div>
+            </div>
+
+            <p>La dimostrazione verrà fatta applicando il <strong class="cavalieri">principio di Cavalieri</strong>.</p>
+
+            <div class="definizione">
+                <h3>⚡ Definizione</h3>
+                <div>
+                    <h4>
+                        Il <span class="cavalieri">principio di Cavalieri</span>:
+                    </h4>
+                    <q>Se due solidi hanno uguale altezza e se le sezioni tagliate da piani paralleli alle basi e ugualmente distanti da queste stanno sempre in un dato rapporto, anche i volumi dei solidi staranno in questo rapporto.</q>
+                </div>
+            </div>
+
+            <h3>Per iniziare</h3>
+
+            <p>Vengono intersecati i <strong class="solidi">solidi</strong> con due piani: uno esattamente al centro di entrambi i solidi, mentre l’altro più in alto.</p>
+            
+            <img class="figure" src="./assets/figures/1.png" alt="Figure 1">
+
+            <p>
+                Considerando il piano in basso che seziona la sfera, notiamo che la parte sezionata è un 
+                <strong class="sfera">cerchio con raggio r</strong>.
+            </p>
+
+            <p>
+                Considerando l’area della parte sezionata <strong class="anticlessidra">nell’anticlessidra</strong> , notiamo che anche la sua parte sezionata è un <strong class="cilindro">cerchio con raggio r</strong>.
+            </p>
+
+            <h3>🤔 Si comincia a vedere qualcosa, no?</h3>
+
+            <p>Consideriamo adesso il <strong>piano in alto</strong>.</p>
+
+            <p>La parte sezionata nella <strong class="sfera">sfera</strong> è un cerchio con raggio inferiore al raggio di prima, che per comodità chiameremo <strong class="raggio">R</strong>.</p>
+
+            <p>Nel <strong class="cilindro">cilindro</strong>, invece, viene sezionata una corona cicolare nella parte <strong class="anticlessidra">dell’anticlessidra</strong> con <strong>superficie uguale al</strong> <strong class="raggio">cerchio sezionato nella sfera</strong>.</p>
+
+            <h3>🚀 Applichiamo il principio di Cavalieri</h3>
+
+            <p>Possiamo scrivere le formule per ottenere l'area dei settori del piano:</p>
+            <div class="latexTitle">Area del settore circolare <span class="sfera">sfera</span></div>
+            
+            <div class="latex">
+                $$
+                A_{sc} = \pi r^{2}
+                $$
+            </div>
+
+            <p>Per ottenere il raggio, ci basta applicare il teorema di Pitagora, prendendo come cateto l’altezza del piano rispetto al centro della <span class="sfera">sfera</span>, e come ipotenusa la distanza tra la circonferenza del settore circolare e il centro della <span class="sfera">sfera</span></p>
+
+            <p>Possiamo dunque riscrivere la formula:</p>
+
+            <div class="formula-img">
+                <img data-solid="sfera" src="./assets/figures/2.png" alt="">
+                <div class="latexFormula">
+                    <div class="latexTitle">
+                        Area del settore circolare <span class="sfera">sfera</span>
+                    </div>
+                    <div class="latex">
+                        $$
+                        A_{sc} = \pi(R^{2} \times x^{2})
+                        $$
+                    </div>
+                </div>
+            </div>
+
+            <p>Per quanto riguarda il <strong class="cilindro">cilindro</strong>:</p>
+
+            <p>È evidente che la distanza tra il centro del <span class="cilindro">cilindro</span> e la base superiore è congruente al raggio delle basi del <span class="cilindro">cilindro</span> stesso.</p>
+
+            <div class="formula-img">
+                <img data-solid="cilindro" src="./assets/figures/3.png" alt="">
+
+                <div class="latexFormula">
+                    <div class="latexTitle">
+                        Area settore <span class="anticlessidra">Anticlessidra</span> <span class="cilindro">Cilindro</span>
+                    </div>
+                    <div class="latex">
+                        $$
+                        A_{sa} = \pi \times R^{2} - \pi \times x^{2}
+    
+                        $$ </div>
+                        <div class="latexTitle">
+                            Raccogliendo π
+                        </div>
+                        <div class="latex"> $$
+    
+                        A_{sa} = \pi(R^{2} \times x^{2})
+                        $$
+                    </div>
+                </div>
+            </div>
+
+            <p>Applicando il principio di Cavalieri notiamo che...</p>
+
+            <h3>🎉 La sfera e l’anticlessidra hanno lo stesso volume</h3>
+
+            <div class="latexFormula">
+                <div class="latexTitle">
+                    Volume <span class="sfera">sfera</span> = Volume <span class="anticlessidra">anticlessidra</span>
+                </div>
+                <div class="latex">
+                    $$
+                        V_{sf} = V_{ac} = V_{cil} - 2V_{cono} = \pi R^{2} \times 2R - 2 \times \frac{1}{3}\pi R^2
+                    $$
+                </div>
+            </div>
+            <p> πR² è l’area di base, moltiplicata per l’altezza 2R è il volume totale del cilindro. <br> 
+                Sottraiamo da questo il doppio del volume di un cono: <br>
+                1/3πR² è l’area della base <br>
+                R è l’altezza del cono.
+            </p>
+
+            <p>Semplificando otteniamo:</p>
+
+            <div class="latexFormula">
+                <div class="latexTitle">
+                    Volume <span class="sfera">sfera</span> = Volume <span class="anticlessidra">anticlessidra</span>
+                </div>
+                <div class="latex">
+                    $$
+                        V_{sf} = 2 \pi R^3 - \frac{2}{3}\pi R^3 = \frac{4}{3} \pi R^3
+                    $$
+                </div>
+            </div>
+        </section>
+
+        <a class="scrollBack" href="#title">Torna all'inizio</a>
+    </main>
+
+    <footer>
+        <h1>MathMate</h1>
+        <div class="sections">
+          <a href="./index.html">Home</a>
+          <a href="#title">Torna all'inizio</a>
+          <a href="./index.html#testimonial">Testimonial</a>
+          <a href="./index.html#team">Il team - Contatti</a>
+        </div>
+      </footer>
+    
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

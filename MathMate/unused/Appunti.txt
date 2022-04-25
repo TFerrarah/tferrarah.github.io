@@ -1,0 +1,60 @@
+Consideriamo una sfera di raggio r
+
+E consideriamo un cilindro circoscritto alla circonferenza
+
+Per comodità separiamo i due solidi.
+
+
+All'interno del cilindro vi sono due coni i cui vertici coincidono col centro del cilindro e le due basi coincidono alle basi del cilindro.
+
+L'unione di questi coni viene chiamata Clessidra,
+mentre lo spazio interno che non è occupato dalla Clessidra viene chiamata AntiClessidra.
+
+
+La dimostrazione della formula del volume della sfera consisterà nell'applicazione del principio di Cavalieri.
+
+
+Per iniziare vengono intersecati due piani con la sfera e il cilindro passanti uno per il centro di entrambi, e l'altro piano generico parallelo al primo.
+
+Considerando la parte di piano che seziona la sfera, notiamo che l'area è un cerchio con raggio r, che è identico alla parte che seziona l'anticlessidra
+
+Considerando, però, il piano parallelo che seziona un'altra parte superiore dei solidi, 
+
+notiamo che la parte che seziona la sfera rimane un cerchio di raggio R, mentre la parte che seziona l'anticlessidra è una corona circolare con la medesima superficie.
+
+A questo punto possiamo applicare il principio di cavalieri.
+
+
+Possiamo scrivere delle formule per ottenere l'area dei settori del piano:
+
+Area Con Settore Circolare: PI * raggio^2
+
+Il raggio non è altro che un'applicazione del teorema di pitagora ai due cateti:
+
+x = OA -> segmento dal centro della sfera al centro del settore circolare.
+R = Segmento dal centro della sfera alla circonferenza del settore circolare.
+
+Area con Settore Circolare: PI * (R^2 - x^2)
+
+
+Per quanto riguarda il cilindro
+
+È evidente che il segmento che va dal centro del cilindro alla base superiore è congruente al raggio del cilindro stesso, 
+e che quindi ritroviamo un triangolo rettangolo isoscele con cateti congruenti OA e OH (centro-centro del settore | centro-centro della base)
+
+[Immagine a 8:20]
+
+Possiamo ottenere l'area della corona circolare sottraendo l'area del settore della clessidra all'area della base.
+
+x = altezza dal centro del cilindro
+
+Area Settore Anticlessidra = PI*Raggio^2 - PI * x^2
+
+Raccogliamo PI
+
+Area Settore Anticlessidra = PI(Raggio^2 - x^2)
+
+
+Applicando il principio di cavalieri, Notiamo che la sfera e l'anticlessidra hanno lo stesso volume.
+
+L'
